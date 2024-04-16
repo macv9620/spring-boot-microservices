@@ -1,0 +1,3 @@
+INSERT INTO public.stock (id, code, quantity) VALUES(114588788,'114588788', 100) ON CONFLICT (id) DO NOTHING;
+INSERT INTO public.stock (id, code, quantity) VALUES(248963877,'248963877', 20) ON CONFLICT (id) DO NOTHING;
+INSERT INTO public.stock (id, code, quantity) VALUES(369855218,'369855218', 0) ON CONFLICT (id) DO NOTHING;

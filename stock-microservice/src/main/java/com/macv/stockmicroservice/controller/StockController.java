@@ -21,6 +21,8 @@ public class StockController{
     public boolean stockAvailable(@PathVariable String code) {
         Optional<StockEntity> stock = stockRepository.findByCode(code);
 
+        System.out.println(code);
+
         stock.orElseThrow(() -> new RuntimeException("Cannot find the product " + code));
 
         return stock.get().getQuantity() > 0;
